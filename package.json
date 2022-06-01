@@ -1,0 +1,36 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=deploy node server/index.js",
+    "dev": "NODE_ENV=dev nodemon server/index.js",
+    "test": "NODE_ENV=test jest --force-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/Notes-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/Notes-App/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/Notes-App#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "env2": "^2.2.2",
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/letter-n.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Note App</title>
+  </head>
+  <body>
+    <div class="link"><a href="/" class="addNote"> Home</a></div>
+
+    <div class="addNoteContainer">
+      <h1>Add a new note</h1>
+      <form method="post" action="/addNote">
+        <label for="title"> Add Title</label>
+        <input type="text" name="title" class="noteTitle note" />
+        <br />
+        <label for="category">Choose a category:</label>
+        <select name="category" id="category" class="category">
+          <option value="1">javascript</option>
+          <option value="2">python</option>
+          <option value="3">php</option>
+          <option value="4">others</option>
+        </select>
+
+        <br />
+        <label for="noteContent"> Enter Your Text here</label>
+        <br />
+        <textarea
+          name="noteContent"
+          class="noteContent note"
+          cols="40"
+          rows="15"
+        ></textarea>
+        <br />
+
+        <br />
+        <button type="submit" class="delete">Submit</button>
+      </form>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
